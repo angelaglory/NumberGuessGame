@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/btnGuess"
+       android:layout_marginTop="58dp"
+       android:layout_toLeftOf="@+id/txtGuess"
+       android:text="Status : "
+       android:textColor="@color/textcolor"
+       android:textColorHint="@color/textcolor"
+       android:textSize="@dimen/activity_vertical_margin"
+       android:textStyle="bold"
+       android:typeface="monospace" />
+
+   <TextView
+       android:id="@+id/txtDurum"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/textView2"
+       android:layout_below="@+id/textView2"
+       android:layout_marginTop="22dp"
+       android:text="Your input is expected to number ..."
+       android:textColor="@color/textcolor"
+       android:typeface="monospace" />
+
+   <Button
+       android:id="@+id/btnGuess"
+       style="@style/btnStyleGenoa"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/txtGuess"
+       android:layout_marginLeft="110dp"
+       android:layout_marginTop="24dp"
+       android:clickable="true"
+       android:text="@string/btnGuess" />
+
+   <EditText
+       android:id="@+id/txtGuess"
+       android:layout_width="100dp"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="46dp"
+       android:ems="10"
+       android:gravity="center_vertical|center_horizontal"
+       android:inputType="number"
+       android:text="0" >
+
+       <requestFocus />
+   </EditText>
+
+   <TextView
+       android:id="@+id/txtGuessSize"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/txtDurum"
+       android:layout_below="@+id/txtDurum"
+       android:layout_marginTop="20dp"
+       android:text="Total guess: 0"
+       android:textColor="@color/colorGuessSize"
+       android:typeface="monospace" />
+      
+</RelativeLayout>
